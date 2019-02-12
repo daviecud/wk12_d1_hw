@@ -42,5 +42,17 @@ public class TestManager {
         assertEquals(35350.999899999995, manager.raiseSalary(), 0);
     }
 
+    @Test
+    public void canCheckRaiseSalaryEntry() {
+        assertEquals(true, manager.checkRaiseSalaryEntry());
+    }
+
+    @Test
+    public void message() {
+        System.out.println("The Manager: " + manager.getName());
+        System.out.println("Salary: £" + manager.getSalary());
+        System.out.println("---------------------------");
+
+    }
 
 }

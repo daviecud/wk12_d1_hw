@@ -12,4 +12,11 @@ public class Director extends management.Manager {
     public double getBudget() {
         return budget;
     }
+
+    public double payBonus() {
+        double calculateBonus = getSalary() / 100;
+        double bonus = calculateBonus * 2;
+        return bonus;
+    }
+
 }

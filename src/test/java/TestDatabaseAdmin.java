@@ -37,5 +37,11 @@ public class TestDatabaseAdmin {
         assertEquals(25250.999900000003, databaseAdmin.raiseSalary(), 0);
     }
 
+    @Test
+    public void message() {
+        System.out.println("The Database Admin: " + databaseAdmin.getName());
+        System.out.println("Salary: £" + databaseAdmin.getSalary());
+        System.out.println("---------------------------");
 
+    }
 }

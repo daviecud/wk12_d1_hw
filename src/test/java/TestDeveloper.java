@@ -37,5 +37,13 @@ public class TestDeveloper {
         assertEquals(30300.999900000003, developer.raiseSalary(), 0);
     }
 
+    @Test
+    public void message() {
+        System.out.println("The Developer: " + developer.getName());
+        System.out.println("Salary: £" + developer.getSalary());
+        System.out.println("---------------------------");
+
+    }
+
 
 }

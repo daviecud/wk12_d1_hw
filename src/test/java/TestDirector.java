@@ -35,16 +35,24 @@ public class TestDirector {
 
     @Test
     public void canGetBonus() {
-        assertEquals(500.00989999999996, director.payBonus(), 0);
+        assertEquals(1000.0197999999999, director.payBonus(), 0);
     }
     @Test
     public void canGetSalaryRaise() {
-        assertEquals(50500.999899999995, director.raiseSalary(), 0);
+        assertEquals(51001.0098, director.raiseSalary(), 0);
     }
 
     @Test
     public void canGetBudget() {
         assertEquals(100000.01, director.getBudget(), 0);
+    }
+
+    @Test
+    public void message() {
+        System.out.println("The Director: " + director.getName());
+        System.out.println("Salary: £" + director.getSalary());
+        System.out.println("---------------------------");
+
     }
 
 

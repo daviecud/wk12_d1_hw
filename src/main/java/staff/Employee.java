@@ -24,15 +24,28 @@ public abstract class Employee {
         return salary;
     }
 
+    public boolean checkRaiseSalaryEntry() {
+        if (payBonus() >= 0) {
+            return true;
+        }
+        return false;
+    }
+
     public double raiseSalary() {
         double salaryRaise = getSalary() + payBonus();
-        return salaryRaise;
+        if (checkRaiseSalaryEntry() && salaryRaise >= 0) {
+            return salaryRaise;
+        } else {
+            String message = "You have entered a negative value!!! ";
+        }
+        return getSalary();
     }
 
     public double payBonus() {
         double calculateBonus = getSalary() / 100;
-        double bonus = calculateBonus * 1;
-        return bonus;
+        return calculateBonus;
     }
+
+
 
 }
